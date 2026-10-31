@@ -28,9 +28,11 @@ iOS·안드로이드 앱 (React Native + Expo), 서버는 Supabase를 씁니다.
 
 1. [supabase.com](https://supabase.com) 가입 → **New project** (지역은 Seoul 추천)
 2. 왼쪽 메뉴 **SQL Editor** → 이 저장소의 `supabase/migrations/0001_stage1.sql` 내용을 전부 붙여 넣고 **Run**
-3. 베타 테스트 동안 가입을 쉽게 하려면: **Authentication → Sign In / Providers → Email** 에서 *Confirm email* 끄기
+   (모든 표가 `odap` 전용 구역에 만들어져서, 같은 프로젝트의 다른 서비스와 섞이지 않아요)
+3. **Project Settings → Data API → Exposed schemas** 에 `odap` 추가 후 Save
+4. 베타 테스트 동안 가입을 쉽게 하려면: **Authentication → Sign In / Providers → Email** 에서 *Confirm email* 끄기
    (켜 두면 가입할 때 확인 메일의 링크를 눌러야 해요)
-4. **Project Settings → API Keys** 에서 Project URL과 Publishable key(또는 anon key)를 복사
+5. **Project Settings → API Keys** 에서 Project URL과 Publishable key(또는 anon key)를 복사
 
 ### 2. 앱 실행 (컴퓨터에서)
 

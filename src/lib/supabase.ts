@@ -12,6 +12,8 @@ export const supabase = createClient(
   isSupabaseConfigured ? supabaseUrl : 'https://not-configured.supabase.co',
   isSupabaseConfigured ? supabaseKey : 'not-configured',
   {
+    // 오답 공룡 데이터는 같은 프로젝트의 다른 서비스와 섞이지 않도록 odap 구역에 있음
+    db: { schema: 'odap' },
     auth: {
       storage: localStorage,
       autoRefreshToken: true,
@@ -32,4 +34,4 @@ if (Platform.OS !== 'web') {
   });
 }
 
-export const PHOTO_BUCKET = 'wrong-answers';
+export const PHOTO_BUCKET = 'odap-wrong-answers';
