@@ -37,7 +37,7 @@ iOS·안드로이드 앱 (React Native + Expo), 서버는 Supabase를 씁니다.
 ### 2. 앱 실행 (컴퓨터에서)
 
 1. [Node.js](https://nodejs.org) LTS 버전 설치
-2. 이 저장소를 내려받은 폴더에서 `.env.example` 파일을 복사해 이름을 `.env` 로 바꾸고, 위에서 복사한 값 두 개를 붙여 넣기
+2. (선택) 기본으로 오답 공룡 Supabase 프로젝트에 연결돼 있어요. 다른 프로젝트를 쓰려면 `.env.example` 을 복사해 `.env` 로 바꾸고 값 두 개를 넣기
 3. 터미널에서 실행
 
    ```bash
